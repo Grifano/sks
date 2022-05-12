@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body class="main__body">
+    <!-- Header -->
+    @@include('./html/_header.html')
+
+    <!-- Main Page -->
+    <main>
+      <!-- @@include('./components/Accordion/_accordion.html') -->
+      <section class="hero">
+        <div class="container hero__container">
+          <img
+            class="hero__image animate__animated animate__rotateIn"
+            src="./img/Hero/Avocado-min.png"
+            alt="Plate with avocado cut by middle"
+            width="398px"
+            height="388px"
+          />
+          <div class="hero__content animate__animated animate__fadeInLeft">
+            <h1 class="hero__title">Zdrowe posiłki - zdrowe życie</h1>
+            <p class="hero__subtitle">
+              Dowiedż się ciekawych rzeci, poznaj nowe przepisy
+            </p>
+          </div>
+          <a
+            href="#about-me"
+            class="hero__chewron animate__animated animate__fadeInUpBig"
+            ><img
+              src="./img/Icons/chevrons-down.png"
+              alt="Chewron icon, bouncing up and down"
+              width="24"
+              height="24"
+          /></a>
+        </div>
+      </section>
+      <section id="about-me" class="about-me">
+        <div class="container">
+          <h2 class="about-me__title title title_h2">O mnie</h2>
+          <div class="about-me__photo">
+            <img src="./img/AboutMe/imagecompressor/photo-min.png" alt="" />
+          </div>
+          <div class="about-me__row">
+            <div class="about-me__col">
+              <div class="about-me__img">
+                <img
+                  src="./img/AboutMe/02.jpg"
+                  alt="Plate with salat on the table"
+                />
+              </div>
+            </div>
+            <div class="about-me__col">
+              <div class="about-me__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Porttitor ultricies pharetra, viverra pulvinar. Quis lorem
+                  maecenas viverra amet, nunc volutpat tempor, et, elit.
+                </p>
+                <a href="#" class="about-me__link read-more">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="about-me__row about-me__row_reverse">
+            <div class="about-me__col">
+              <div class="about-me__img">
+                <img
+                  src="./img/AboutMe/03.jpg"
+                  alt="Word stady collected with the letrers on dices"
+                />
+              </div>
+            </div>
+            <div class="about-me__col">
+              <div class="about-me__text about-me__text_mr-24">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Porttitor ultricies pharetra, viverra pulvinar. Quis lorem
+                  maecenas viverra amet, nunc volutpat tempor, et, elit.
+                </p>
+                <a href="#" class="about-me__link read-more">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Blog-carousell" class="blog-carousell">
+        <h2 class="blog-carousell__title title title_h2">Blog</h2>
+        <div class="blog-carousell__slider slider">
+          <div class="slider__item">
+            <div class="blog-carousell__blog-card">
+              <div class="blog-card">
+                <img
+                  class="blog-card__img"
+                  src="./img/Blog/01.jpg"
+                  alt="toasts with fruit on the cutting board"
+                />
+                <div class="blog-card__content">
+                  <h4 class="blog-card__title title title_h4">
+                    Crock-Pot Apple Butter
+                  </h4>
+                  <p class="blog-card__p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    rutrum diam et condimentum egestas feugiat at a. Aliquam
+                    pulvinar in et eget ut a.
+                  </p>
+                  <p class="blog-card__p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    rutrum diam et condimentum egestas feugiat at a. Aliquam
+                    pulvinar in et eget ut a.
+                  </p>
+                </div>
+                <div class="blog-card__footer">
+                  <div class="author">
+                    <img
+                      class="author__avatar"
+                      src="./img/Blog/avatar/01.jpg"
+                      alt=""
+                    />
+                    <div class="author__info">
+                      <p class="author__name">Jane Cooper</p>
+                      <p class="author__date">May 10, 2022</p>
+                    </div>
+                  </div>
+                  <div class="like">
+                    <p>12</p>
+                    <img src="./img/Icons/Filled 24px/star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+  </body>
+
+  <script src="./js/scripts.min.js"></script>
+</html>

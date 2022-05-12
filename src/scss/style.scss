@@ -1,0 +1,215 @@
+// Global SCSS-files imports
+@import "./fonts";
+@import "./vars";
+@import "./reset";
+@import "./global";
+
+// Sections or Pages SCSS-files imports
+@import "./header";
+@import "../components/Navbar/navbar";
+@import "./footer";
+// @import '../components/Accordion/accordion';
+
+// Libs
+// @import './libs/swiper';
+
+// Main
+.hero {
+  height: 100vh;
+  background-image: url("../img/Hero/Overlay-min.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 8vmax;
+  &__image {
+    margin-left: -11px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 32%;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  &__content {
+    width: 100%;
+    max-width: 814px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    border-radius: 100px;
+    padding: 24px 48px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  &__title {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 12px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  &__chewron {
+    display: inline-block;
+    padding: 24px;
+    img {
+      animation: chewron 2s ease-in-out 0s infinite;
+    }
+    @keyframes chewron {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(12px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  @media (max-width: $breakpoint768) {
+    background-position: top 50% left 80%;
+    &__image {
+      top: 25%;
+      width: 268px;
+      height: 258px;
+    }
+    &__content {
+      padding: 12px 22px 12px 12px;
+      border-radius: 0 100px 100px 0;
+      margin-left: -24px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    &__title {
+      font-size: 2rem;
+      line-height: 100%;
+      max-width: 80%;
+    }
+  }
+}
+
+// About Me
+.about-me {
+  margin-top: 70px;
+  &__title {
+  }
+
+  &__photo {
+    margin: auto;
+    width: 100%;
+    max-width: 602px;
+    margin-bottom: 100px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    &_reverse {
+      margin-left: 24px;
+      margin-top: 100px;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__col {
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 620px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    &_mr-24 {
+      margin-right: -24px;
+    }
+    max-width: 644px;
+    height: 23.611vw;
+    padding: 1.667vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: -24px;
+    position: relative;
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+  &__link {
+    position: absolute;
+    right: 1.667vw;
+    bottom: 1.667vw;
+  }
+  @media (max-width: $breakpoint768) {
+    margin-top: 35px;
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_reverse {
+        margin-left: 0;
+        margin-top: 40px;
+        // flex-direction: row-reverse;
+      }
+    }
+    &__text {
+      margin: auto;
+      margin-top: -4.667vmax;
+      height: auto;
+      padding: 24px;
+      &_mr-24 {
+        margin-right: auto;
+      }
+      max-width: 85%;
+      p {
+        margin-bottom: 48px;
+      }
+    }
+    &__link {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+    }
+  }
+}
+.blog-carousell {
+  &__title {
+  }
+
+  &__slider {
+  }
+
+  &__blog-card {
+  }
+}
+.slider {
+  &__item {
+  }
+}
